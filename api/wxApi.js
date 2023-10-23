@@ -28,7 +28,7 @@ const sendMsg = async (content, userId) => {
     touser: userId,
     msgtype: "text",
     text: {
-      content: data1
+      content: "你好你好你好你hi奥"
     }
   };
   // const data = {
@@ -44,6 +44,7 @@ const sendMsg = async (content, userId) => {
   const url =
   "https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=" +
   token;
+  request()
   await axios.post(url, data);
 };
 
