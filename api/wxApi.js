@@ -28,7 +28,7 @@ const sendMsg = async (content, userId) => {
     touser:userId,
     msgtype:"text",
     text:{
-      content:"你好你好你好你hi奥"
+      content:content
     }
   };
   // const data = {

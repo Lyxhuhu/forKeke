@@ -163,5 +163,29 @@ const build = async (data, city, astro) => {
   await buildWanAn(data);
   await buildCaiHongPi(data);
 };
+/**
+ * 根据data组装最后信息
+ */
+const packMsg = async(data) => {
+  var title = "珂珂宝贝早上好呀！" + "\n";
+  var userName = "我最最最爱的" + data.userName.value + "\n";
+  var nowDate = "今天:" + data.nowDate.value + "\n";
+  var city = "珂珂窝:" + data.city.value + "\n";
+  var weather = "天气状态:" + data.weather.value + "\n";
+  var real = "现在温度:" + data.real.value + "\n";
+  var est = "今天温度:" + data.est.value + "\n";
+  var wind = "今天风向:" + data.wind.value + "\n";
+  var tips = "穿戴建议:" + data.tips.value + "\n";
+  var saylove = "小狗语录:" + data.saylove.value + "\n";
+  var togetherDays = "和小狗在一起:" + data.togetherDays.value + "\n";
+  var birthday = "距离珂珂的下一个生日:" + data.togetherDays.value + "\n";
+  var leoSaying = "小狗一直很想你呀！！！"
 
-module.exports = { build };
+  var res = title + userName + nowDate + city + weather + real + est + wind + tips + saylove + togetherDays + birthday + leoSaying
+  return res
+};
+
+module.exports = { 
+  build,
+  packMsg,
+ };

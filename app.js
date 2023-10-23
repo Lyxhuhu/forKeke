@@ -41,6 +41,7 @@ const TianApi = require("./api/tianApi");
       },
     };
     await BuildMsg.build(data, item.city, item.star);
-    WxApi.sendMsg(data, item.userId);
+    var msg = await BuildMsg.packMsg(data);
+    WxApi.sendMsg(msg, item.userId);
   });
 })();
