@@ -25,10 +25,10 @@ const sendMsg = async (content, userId) => {
   const token = (await getToken()).data.access_token;
   let data1 = '珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂'
   const data = {
-    touser: userId,
-    msgtype: "text",
-    text: {
-      content: "你好你好你好你hi奥"
+    touser:userId,
+    msgtype:"text",
+    text:{
+      content:"你好你好你好你hi奥"
     }
   };
   // const data = {
