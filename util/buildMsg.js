@@ -178,8 +178,9 @@ const packMsg = async(data) => {
   var tips = "穿戴建议:" + data.tips.value + "\n";
   var saylove = "小狗语录:" + data.saylove.value + "\n";
   var togetherDays = "和小狗在一起:" + data.togetherDays.value + "\n";
-  var birthday = "距离珂珂的下一个生日:" + data.togetherDays.value + "\n";
-  var leoSaying = "小狗一直很想你呀！！！" + "\n" + "明天就能看到你了,小狗要抱着你转圈圈";
+  var birthday = "距离珂珂的下一个生日:" + data.birthday.value + "\n";
+  var leoSaying = "小狗一直很想你呀！！！"
+  // var leoSaying = "小狗一直很想你呀！！！" + "\n" + "明天就能看到你了,小狗要抱着你转圈圈";
 
   var res = title + userName + nowDate + city + weather + real + est + wind + tips + saylove + togetherDays + birthday + leoSaying
   return res
