@@ -24,17 +24,26 @@ const getToken = async () => {
 const sendMsg = async (content, userId) => {
   const token = (await getToken()).data.access_token;
   let data1 = '珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂'
-  
   const data = {
     touser: userId,
-    template_id: CONFIG.TEMPLATE_ID,
-    data: data1,
+    msgtype: "text",
+    text: {
+      content: data1
+    }
   };
+  // const data = {
+  //   touser: userId,
+  //   template_id: CONFIG.TEMPLATE_ID,
+  //   data: data1,
+  // };
   
 
+  // const url =
+  //   "https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=" +
+  //   token;
   const url =
-    "https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=" +
-    token;
+  "https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=" +
+  token;
   await axios.post(url, data);
 };
 
