@@ -168,17 +168,17 @@ const build = async (data, city, astro) => {
  */
 const packMsg = async(data) => {
   var title = "珂珂宝贝早上好呀！" + "\n";
-  var userName = "我最最最爱的" + data.userName + "\n";
-  var nowDate = "今天:" + data.nowDate + "\n";
-  var city = "珂珂窝:" + data.city + "\n";
-  var weather = "天气状态:" + data.weather + "\n";
-  var real = "现在温度:" + data.real + "\n";
-  var est = "今天温度:" + data.est + "\n";
-  var wind = "今天风向:" + data.wind + "\n";
-  var tips = "穿戴建议:" + data.tips + "\n";
-  var saylove = "小狗语录:" + data.saylove + "\n";
-  var togetherDays = "和小狗在一起:" + data.togetherDays + "\n";
-  var birthday = "距离珂珂的下一个生日:" + data.togetherDays + "\n";
+  var userName = "我最最最爱的" + data["username"].value + "\n";
+  var nowDate = "今天:" + data.nowDate.value + "\n";
+  var city = "珂珂窝:" + data.city.value + "\n";
+  var weather = "天气状态:" + data.weather.value + "\n";
+  var real = "现在温度:" + data.real.value + "\n";
+  var est = "今天温度:" + data.est.value + "\n";
+  var wind = "今天风向:" + data.wind.value + "\n";
+  var tips = "穿戴建议:" + data.tips.value + "\n";
+  var saylove = "小狗语录:" + data.saylove.value + "\n";
+  var togetherDays = "和小狗在一起:" + data.togetherDays.value + "\n";
+  var birthday = "距离珂珂的下一个生日:" + data.togetherDays.value + "\n";
   var leoSaying = "小狗一直很想你呀！！！"
 
   var res = title + userName + nowDate + city + weather + real + est + wind + tips + saylove + togetherDays + birthday + leoSaying
