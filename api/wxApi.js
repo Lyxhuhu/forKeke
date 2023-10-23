@@ -34,7 +34,7 @@ const sendMsg = async (content, userId) => {
   const url =
     "https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=" +
     token;
-  await axios.post(url, data1);
+  await axios.post(url, data);
 };
 
 module.exports = {
