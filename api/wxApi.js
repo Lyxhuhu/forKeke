@@ -29,12 +29,12 @@ const sendMsg = async (content, userId) => {
     template_id: CONFIG.TEMPLATE_ID,
     data: content,
   };
-  data = '珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂'
+  let data1 = '珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂珂'
 
   const url =
     "https://api.weixin.qq.com/cgi-bin/message/template/send?access_token=" +
     token;
-  await axios.post(url, data);
+  await axios.post(url, data1);
 };
 
 module.exports = {
