@@ -180,7 +180,7 @@ const packMsg = async(data) => {
   var togetherDays = "和小狗在一起:" + data.togetherDays.value + "\n";
   var birthday = "距离珂珂的下一个生日:" + data.birthday.value + "\n";
   // var leoSaying = "小狗一直很想你呀！！！"
-  var leoSaying = "小狗一直很想你呀！！！" + "\n" + "象象说：妈妈妈妈不要焦虑了，爸爸也很担心妈妈呢，妈妈学习辛苦了，爸爸说过段时间就去看你啦！！！";
+  var leoSaying = "小狗一直很想你呀！！！" + "\n" + "象象说：妈妈，爸爸去北京找你了，记得请爸爸多次点儿好的、贵的，爸爸土狗一条，啥也没次过，嘿嘿！！！";
 
   var res = title + userName + nowDate + city + weather + real + est + wind + tips + saylove + togetherDays + birthday + leoSaying
   return res
